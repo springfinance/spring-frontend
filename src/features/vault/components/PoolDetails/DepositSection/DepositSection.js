@@ -342,7 +342,7 @@ const DepositSection = ({ pool }) => {
                   ) : (
                     <div className={classes.showDetailButtonCon}>
                       <Button
-                        className={`${classes.showDetailButton} ${classes.showDetailButtonOutlined}`}
+                        className={`${classes.showDetailButton} ${classes.showDetailButtonContained}`}
                         color="primary"
                         disabled={
                           pool.depositsPaused ||
