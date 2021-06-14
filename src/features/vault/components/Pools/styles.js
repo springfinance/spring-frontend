@@ -8,7 +8,7 @@ const styles = theme => ({
     alignItems: 'flex-end',
   },
   title: {
-    fontSize: '32px',
+    fontSize: '2rem',
     letterSpacing: '0',
     lineHeight: '32px',
     fontWeight: '550',
@@ -17,7 +17,8 @@ const styles = theme => ({
     alignItems: 'center',
   },
   titleLoader: {
-    marginLeft: '12px',
+    marginLeft: '8px',
+    fontSize:'2rem'
   },
   subtitle: {
     fontSize: '14px',
@@ -39,6 +40,11 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
   },
+  price: {
+    fontSize: '1.8rem',
+
+  },
+
 });
 
 export default styles;

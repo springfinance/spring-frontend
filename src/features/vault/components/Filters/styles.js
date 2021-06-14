@@ -68,12 +68,13 @@ const styles = theme => ({
   },
   optionLeft: {
     float:'left',
+    paddingLeft:'2rem',
     fontSize: '1.3rem',
   },
 
   optionRight: {
-    float:'right',
-    paddingRight:'70px',
+    float:'left',
+    paddingLeft:'2rem',
     fontSize: '1.3rem',
   },
   option: {

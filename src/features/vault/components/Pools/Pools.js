@@ -63,12 +63,11 @@ export default function Pools() {
             <div class=" col-md-3">
               <p>
                 <small>SPRING Price</small>
-                $123,456,789
-               
+                <span className={classes.price}>$123,456,789</span>
               </p>
               <p>
                 <small>SPRING Market Cap</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
             </div>
             <div class=" text-center col-md-6 mt40-xs mb40-xs">
@@ -87,11 +86,11 @@ export default function Pools() {
             <div class=" col-md-3">
               <p>
                 <small>Your Deposit</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
               <p>
                 <small>SPRING to harvest</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
             </div>
           </div>
