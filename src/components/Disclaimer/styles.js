@@ -14,6 +14,9 @@ const styles = theme => ({
     fontWeight: 900,
     color: theme.palette.text.primary,
   },
+  h2_img:{
+    maxWidth: '400px !important',
+  }
 });
 
 export default styles;

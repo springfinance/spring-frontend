@@ -263,6 +263,9 @@ const styles = theme => ({
     fontfamily:'Poppins',
     backgroundColor: 'transparent !important',
   },
+  iconSize: {
+    fontSize:'3rem',
+  },
   btnBoost: {
     marginLeft: '10px',
     marginRight: '5px',

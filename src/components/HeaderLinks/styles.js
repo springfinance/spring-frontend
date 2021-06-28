@@ -1,9 +1,11 @@
+import { green, lightGreen } from '@material-ui/core/colors';
 import {
   grayColor,
   primaryColor,
   whiteColor,
   mlAuto,
   hexToRgb,
+  blackColor,
 } from 'assets/jss/material-kit-pro-react.js';
 
 const styles = theme => ({
@@ -19,6 +21,7 @@ const styles = theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       display: 'block',
+      backgroundColor:blackColor
     },
     marginTop: '0px',
     display: 'flex',
@@ -52,6 +55,16 @@ const styles = theme => ({
         },
       },
     },
+  },
+  listItemBtn: {
+    color: blackColor,
+    position: 'relative',
+    backgroundColor:whiteColor,
+    display: 'block',
+    width: 'auto',
+    fontSize:'2rem',
+    margin: '0',
+    padding: '0',
   },
   listItemText: {
     padding: '0 !important',

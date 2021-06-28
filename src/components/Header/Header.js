@@ -69,7 +69,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             aria-label="open drawer"
             onClick={handleDrawerToggle}
           >
-            <Menu />
+            <Menu className={classes.iconSize}/>
           </IconButton>
         </Hidden>
       </Toolbar>

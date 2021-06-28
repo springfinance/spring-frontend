@@ -141,48 +141,28 @@ const HeaderLinks = ({
         <a href="#."><img src="img/icon/ic_twitter.png" alt="twitter" width="40px"/></a>
         <a href="#."><img src="img/icon/ic_github.png" alt="github" width="40px"/></a>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
-          navDropdown
-          hoverColor="dark"
-          buttonText={lng}
-          buttonProps={{
-            className: classes.navLink,
-            color: 'transparent',
-          }}
-          onClick={handleClick}
-          dropdownList={[
-            'Deutsch',
-            'English',
-            'Ελληνικά',
-            'Español',
-            'Français',
-            'हिन्दी',
-            'Bahasa Indonesia',
-            'Italiano',
-            '한글',
-            'Nederlands',
-            'Português',
-            'Pусский',
-            'Svenska',
-            'Türkçe',
-            'Українська',
-            '中文',
-            // TODO: more translations
-            { divider: true },
-            <a
-              href="https://github.com/beefyfinance/beefy-app/tree/master/src/locales"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classes.cta}
-            >
-              Help to translate
-            </a>,
-          ]}
-        /> */}
-      </ListItem>
-    </List>
+      <Hidden smUp>
+      <div className={classes.listItemBtn}>
+        {renderLink('SPRING', 'SPRING', 'SPRING', classes)}<br/>
+        {renderLink('GARDEN', 'GARDEN', 'GARDEN', classes)}<br/>
+        {renderLink('AUDIT', t('AUDIT'), 'AUDIT', classes)}
+      </div>
+      </Hidden> 
+  </List>
   );
 };
-
+const renderLink = (name, label, icon, classes) => {
+  return (
+    <a
+      href={(name)}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={classes.link}
+      style={{ marginLeft: '5px', marginRight: '5px' }}
+    >
+      <i className={`fas fa-${icon} ${classes.icon}`} />
+      <span>{label}</span>
+    </a>
+  );
+};
 export default HeaderLinks;

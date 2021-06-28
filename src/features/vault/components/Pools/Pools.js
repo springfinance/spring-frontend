@@ -55,7 +55,7 @@ export default function Pools() {
   
   return (
     <Grid container className={classes.container}  justify="center">
-      <Grid item xs={10}>
+      <Grid item xs={12}>
       <section id="status_plate">
       <div class="container">
         <div class="top_status">
@@ -122,7 +122,7 @@ export default function Pools() {
         </div> */}
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={12}>
         <div class="title_tab_menu clearfix">
           <a href="/" class="on">
             <p>
