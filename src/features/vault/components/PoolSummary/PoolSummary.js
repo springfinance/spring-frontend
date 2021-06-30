@@ -199,19 +199,11 @@ const PoolSummary = ({
               align="start"
             /> */}
           </Grid>
-          <Grid item xs={12} >
-          <LabeledStat
-              value={formatTvl(pool.tvl, pool.oraclePrice)}
-              label={t('Vault-TVL')}
-              isLoading={!fetchVaultsDataDone}
-              xs={12}
-            />
             <LabeledStat
               value={formatApy(apy)}
               label={t('Vault-APY')}
               isLoading={!fetchApysDone}
               boosted={launchpool ? formatApy(launchpool.apy + apy) : ''}
-              xs={12}
               align="start"
             />
             <LabeledStat
@@ -219,15 +211,12 @@ const PoolSummary = ({
               label={t('Vault-APYDaily')}
               isLoading={!fetchApysDone}
               boosted={launchpool ? calcDaily(launchpool.apy + apy) : ''}
-              xs={12}
             />
             <LabeledStat
               value={formatTvl(pool.tvl, pool.oraclePrice)}
               label={t('Vault-TVL')}
               isLoading={!fetchVaultsDataDone}
-              xs={12}
             />
-          </Grid>
         </Hidden>
       </Grid>
 

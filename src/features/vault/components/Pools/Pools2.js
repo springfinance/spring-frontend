@@ -18,7 +18,7 @@ const FETCH_INTERVAL_MS = 15 * 1000;
 
 const useStyles = makeStyles(styles);
 
-export default function Pools2() {
+export default function Pools() {
   const { t } = useTranslation();
   const { web3, address } = useConnectWallet();
   const { pools, fetchVaultsData, fetchVaultsDataPending, fetchVaultsDataDone } = useFetchVaultsData();
@@ -55,7 +55,7 @@ export default function Pools2() {
   
   return (
     <Grid container className={classes.container}  justify="center">
-      <Grid item xs={10}>
+      <Grid item xs={12}>
       <section id="status_plate">
       <div class="container">
         <div class="top_status">
@@ -63,12 +63,11 @@ export default function Pools2() {
             <div class=" col-md-3">
               <p>
                 <small>SPRING Price</small>
-                $123,456,789
-               
+                <span className={classes.price}>$123,456,789</span>
               </p>
               <p>
                 <small>SPRING Market Cap</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
             </div>
             <div class=" text-center col-md-6 mt40-xs mb40-xs">
@@ -87,11 +86,11 @@ export default function Pools2() {
             <div class=" col-md-3">
               <p>
                 <small>Your Deposit</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
               <p>
                 <small>SPRING to harvest</small>
-                $123,456,789
+                <span className={classes.price}>$123,456,789</span>
               </p>
             </div>
           </div>
@@ -123,7 +122,7 @@ export default function Pools2() {
         </div> */}
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={12}>
         <div class="title_tab_menu clearfix">
           <a href="/" >
             <p>

@@ -13,8 +13,15 @@ const Disclaimer = () => {
   const classes = useStyles();
 
   return (
+    
     <Grid container item className={classes.root} justify="center">
-      <h2 class="text-center"><img src="img/com/logo_text.png"  alt="" width="494px" /></h2>
+      <section id="status_plate">
+		      <div class="container">
+      <h2 className={classes.h2_img}>
+      <img src="img/com/logo_text.png"  alt="" class="wp100"  />
+      </h2>
+      </div>
+      </section>
     </Grid>
   );
 };

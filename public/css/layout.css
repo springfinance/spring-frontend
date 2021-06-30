@@ -162,10 +162,10 @@ body{
 
 /*top_contents*/
 #status_plate {
-	margin-bottom:7rem;
+	margin-bottom:2rem;
 }
 #status_plate h2{
-	margin-bottom:7rem;
+	margin-bottom:2rem;
 }
 #status_plate .container{
 	max-width:1140px !important;
