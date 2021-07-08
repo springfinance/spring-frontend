@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect, useMemo } from 'react';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 import Grid from '@material-ui/core/Grid';
@@ -342,7 +343,7 @@ const DepositSection = ({ pool }) => {
                   ) : (
                     <div className={classes.showDetailButtonCon}>
                       <Button
-                        className={`${classes.showDetailButton} ${classes.showDetailButtonOutlined}`}
+                        className={`${classes.showDetailButton} ${classes.showDetailButtonContained}`}
                         color="primary"
                         disabled={
                           pool.depositsPaused ||
@@ -353,7 +354,7 @@ const DepositSection = ({ pool }) => {
                         }
                         onClick={handleDepositAmount}
                       >
-                        {t('Vault-DepositButton')}
+                      {t('Vault-DepositButton')}
                       </Button>
                       {Boolean(pool.tokenAddress) && Boolean(!depositSettings.isZap) && (
                         <Button

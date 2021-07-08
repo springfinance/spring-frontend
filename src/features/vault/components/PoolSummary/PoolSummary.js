@@ -124,11 +124,13 @@ const PoolSummary = ({
                 isLoading={!fetchApysDone}
                 xs={4}
                 md={2}
+                align="start"
               />
               <LabeledStat
                 value={formatTvl(pool.tvl, pool.oraclePrice)}
                 isLoading={!fetchVaultsDataDone}
                 label='TVL'
+                // eslint-disable-next-line react/jsx-no-duplicate-props
                 isLoading={!fetchApysDone}
                 xs={4}
                 md={2}
@@ -138,7 +140,7 @@ const PoolSummary = ({
                 <Grid item xs={2} >
                 <LabeledStat
                     label='Blance'
-                    xs={12}
+                    align="start"
                   />
                   <LabeledStat
                     label='Deposit'
@@ -146,7 +148,7 @@ const PoolSummary = ({
                   />
                   <LabeledStat
                     label='Reward'
-                    xs={12}
+                    align="start"
                   />
 
                 </Grid>
@@ -155,7 +157,7 @@ const PoolSummary = ({
                     value={formatDecimals(balanceSingle)}
                     subvalue={balanceUsd}
                     isLoading={!fetchBalancesDone}
-                    xs={12}
+                    align="start"
                   />
                   <LabeledStat
                     value={formatDecimals(deposited)}
@@ -168,7 +170,7 @@ const PoolSummary = ({
                     value={calcDaily(apy)}
                     isLoading={!fetchApysDone}
                     boosted={launchpool ? calcDaily(launchpool.apy + apy) : ''}
-                    xs={12}
+                    align="start"
                   />
                 </Grid>
             </Hidden>

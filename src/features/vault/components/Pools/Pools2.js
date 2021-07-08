@@ -124,7 +124,7 @@ export default function Pools() {
 
       <Grid item xs={12}>
         <div class="title_tab_menu clearfix">
-          <a href="/" >
+          <a href="/">
             <p>
               <span>sVaults</span>
             </p>
